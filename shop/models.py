@@ -31,9 +31,9 @@ class Category(models.Model):
 
 class Price(models.Model):
     currency_choices = (
-        ("USD", "United States Dollars"),
+        ("USD", "US Dollars"),
         ("EUR", "Euro"),
-        ("IRI", "Iran Rial"),
+        ("IRR", "Iranian Rial"),
     )
 
     price = models.DecimalField(decimal_places=2, max_digits=10)
